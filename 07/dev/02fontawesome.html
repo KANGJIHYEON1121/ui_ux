@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontawesome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        a:link, a:visited, a:hover {
+            color: black;
+        }
+
+        .btn-1:hover {
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+        }
+
+        .btn-2:hover {
+            background-color: blue;
+            border: 1px solid blue;
+            color: white;
+        }
+
+        .btn-3:hover {
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul>
+            <li><a class="btn-1" href=""><i class="fa-solid fa-house"></i> 메뉴1</a></li>
+            <li><a class="btn-2" href=""><i class="fa-solid fa-calendar-check"></i> 메뉴2</a></li>
+            <li><a class="btn-3" href=""><i class="fa-solid fa-battery-quarter"></i> 메뉴3</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
