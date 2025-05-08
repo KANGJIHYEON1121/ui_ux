@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxshadow</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .wrap {
+            width: 150px;
+            height: 150px;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap"></div>
+    <div class="wrap"></div>
+    <div class="wrap"></div>
+    <div class="wrap"></div>
+    <div class="wrap"></div>
+</body>
+
+</html>
