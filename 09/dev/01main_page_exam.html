@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1200px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            margin-right: 10px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* header 영역 */
+        header {
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 200px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form>input.search {
+            height: 30px;
+            border: none;
+            outline: none;
+        }
+
+        i {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* nav 영역 */
+        nav {
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* main 영역 */
+        main {
+            width: 100%;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        main>div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        main>div>article {
+            width: 45%;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        /* section 영역 */
+        section {
+            width: 100%;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        section>div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section>div>article {
+            width: 45%;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        /* aside 영역 */
+        aside {
+            width: 30%;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        figure {
+            width: 100%;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        figure>article {
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        figure>figcaption {
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        /* footer 영역 */
+        footer {
+            width: 100%;
+            height: 80px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <p>&lt;header&gt;</p>
+            <form method='get' action='#'>
+                <input type='search' class="search" name='search' placeholder='검색어를 입력해 주세요.'>
+                <i class="fa-solid fa-magnifying-glass" onclick="alert('검색버튼 이벤트 발생')"></i>
+            </form>
+        </header>
+        <nav>
+            <p>&lt;nav&gt;</p>
+        </nav>
+
+        <div class="container">
+            <div class="content">
+                <main>
+                    <p>&lt;main&gt;</p>
+                    <div>
+                        <article>&lt;article1&gt;</article>
+                        <article>&lt;article2&gt;</article>
+                    </div>
+                </main>
+
+                <section>
+                    <p>&lt;section&gt;</p>
+                    <div>
+                        <article>&lt;article3&gt;</article>
+                        <article>&lt;article4&gt;</article>
+                    </div>
+                </section>
+            </div>
+
+            <aside>
+                <p>&lt;aside&gt;</p>
+                <figure>
+                    <p>&lt;figure&gt;</p>
+                    <article>&lt;article5&gt;</article>
+                    <figcaption>&lt;figcaption&gt;</figcaption>
+                </figure>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&lt;footer&gt;</p>
+        </footer>
+    </div>
+</body>
+
+</html>
